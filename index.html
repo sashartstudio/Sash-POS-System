@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sash art Studio - POS</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body class="min-h-screen bg-neutral-100 dark:bg-ink-950 text-neutral-900 dark:text-neutral-100 antialiased font-sans">
+<div id="splash" class="fixed inset-0 z-[200] flex flex-col items-center justify-center gap-4 bg-ink-950 transition-opacity duration-500">
+  <div class="h-12 w-12 animate-spin rounded-full border-4 border-maroon-600 border-t-transparent"></div>
+  <p class="text-sm tracking-widest text-neutral-400 uppercase">Loading POS</p>
+</div>
+<div id="app" class="print:hidden relative min-h-screen overflow-x-hidden"></div>
+<div id="modal" class="print:hidden"></div>
+<div id="toasts" class="print:hidden fixed top-4 right-4 z-[150] flex flex-col gap-2"></div>
+<div id="printArea" class="hidden print:block"></div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
